@@ -32,3 +32,11 @@ VALUES
 
 -- to select specific columns
   select name, area FROM cities
+
+  -- calculated columns
+
+  select name, population/area from cities 
+
+-- we can give a name to the calculated column
+  select name, population/area as population_desnity 
+  from cities
